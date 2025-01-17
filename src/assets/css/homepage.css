@@ -7,7 +7,7 @@
 }
 
 .homepage-title {
-    font-size: 124px;
+    font-size: 100px;
     font-stretch: expanded; /*Need a font where this value actually applies*/
     letter-spacing: 50px;
     text-indent: 50px;
@@ -170,4 +170,17 @@
     opacity: 60%;
     top: -20%;
     left: 104%;
+}
+
+.homepage-sub-header {
+    margin-top: 190px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.homepage-sub-header-item {
+    letter-spacing: 4px;
+    cursor: pointer;
 }

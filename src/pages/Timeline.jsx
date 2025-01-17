@@ -1,6 +1,8 @@
 const Timeline = () => {
     return (
-        <div className="timeline">Timeline</div>
+        <div className="timeline-container">
+            <div>Timeline</div>
+        </div>
     )
 }
 

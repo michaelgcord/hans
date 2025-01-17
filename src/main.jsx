@@ -1,19 +1,39 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom'
 import HomePage from './pages/HomePage.jsx'
 import Timeline from './pages/Timeline.jsx'
+import Releases from './pages/Releases.jsx'
+import About from './pages/About.jsx'
+import EventsSpecial from './pages/EventsSpecial.jsx'
+import MiscBlog from './pages/MiscBlog.jsx'
 import './assets/css/index.css'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
 	{
-		path: '/hans/',
+		path: '/homepage',
 		element: <HomePage />
 	},
 	{
-		path: '/hans/timeline',
+		path: '/timeline',
 		element: <Timeline />
-	}
+	},
+	{
+		path: '/releases',
+		element: <Releases />
+	},
+	{
+		path: '/about',
+		element: <About />
+	},
+	{
+		path: '/events-special',
+		element: <EventsSpecial />
+	},
+	{
+		path: '/misc-blog',
+		element: <MiscBlog />
+	},		
 ])
 
 createRoot(document.getElementById('root')).render(

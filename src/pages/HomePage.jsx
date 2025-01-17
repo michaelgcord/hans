@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const HomePage = () => {
     return (
         <div className="homepage-container">
@@ -17,6 +19,23 @@ const HomePage = () => {
                 <div className="homepage-photo-11">11</div>
                 <div className="homepage-photo-12">12</div>
                 <div className="homepage-photo-13">13</div>
+            </div>
+            <div className="homepage-sub-header">
+                <div className="homepage-sub-header-item unselectable">
+                    <Link to="/timeline">TIMELINE</Link>
+                </div>
+                <div className="homepage-sub-header-item unselectable">
+                    <Link to="/releases">RELEASES</Link>
+                </div>
+                <div className="homepage-sub-header-item unselectable">
+                    <Link to="/about">ABOUT</Link>
+                </div>
+                <div className="homepage-sub-header-item unselectable">
+                    <Link to="/events-special">EVENTS/SPECIAL</Link>
+                </div>
+                <div className="homepage-sub-header-item unselectable">
+                    <Link to="/misc-blog">MISC/BLOG</Link>
+                </div>
             </div>
         </div>
     )

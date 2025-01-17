@@ -1,5 +1,9 @@
 @import './homepage.css';
 @import './timeline.css';
+@import './releases.css';
+@import './about.css';
+@import './events-special.css';
+@import './misc-blog.css';
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -18,6 +22,10 @@
 
 body {
   margin: 0;
+}
+
+a {
+  all: unset;
 }
 
 .unselectable {
