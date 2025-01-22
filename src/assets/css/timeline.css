@@ -2,6 +2,83 @@
     height: 100vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-title {
+    font-size: 48px;
+    letter-spacing: 10px;
+}
+
+.timeline-box {
+    margin-top: 100px;
+    height: 600px;
+    width: 1400px;
+    /* border: solid red 1px; */
+    display: flex; 
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+/* .timeline-line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.timeline-line {
+    height: 1px;
+    width: 3000px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 1600px;
+}
+
+.timeline-drag {
+    width: 1400px;
+    height: 40px;
+    /* border: solid pink 1px; */
+    margin-top: -320px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.timeline-card-container {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px; */
+    position: relative;
+}
+
+.timeline-dot {
+    height: 6px;
+    width: 6px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: -2px;
+}
+
+.timeline-card {
+    position: absolute;
+    background-color: gray;
+    height: 200px;
+    width: 400px;
+} 
+
+.down {
+    top: 50px;
+    left: -200px;
+}
+
+.up {
+    top: -250px;
+    left: -200px;
 }
