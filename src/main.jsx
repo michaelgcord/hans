@@ -5,7 +5,7 @@ import HomePage from './pages/HomePage.jsx'
 import Timeline from './pages/Timeline.jsx'
 import Releases from './pages/Releases.jsx'
 import About from './pages/About.jsx'
-import EventsSpecial from './pages/EventsSpecial.jsx'
+import Events from './pages/Events.jsx'
 import MiscBlog from './pages/MiscBlog.jsx'
 import './assets/css/index.css'
 
@@ -27,8 +27,8 @@ const router = createHashRouter([
 		element: <About />
 	},
 	{
-		path: '/events-special',
-		element: <EventsSpecial />
+		path: '/events',
+		element: <Events />
 	},
 	{
 		path: '/misc-blog',
