@@ -4,81 +4,70 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .timeline-title {
-    font-size: 48px;
-    letter-spacing: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -6%;
 }
-
-.timeline-box {
-    margin-top: 100px;
-    height: 600px;
-    width: 1400px;
-    /* border: solid red 1px; */
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    overflow: hidden;
-    position: relative;
-    
-}
-
-/* .timeline-line-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 
 .timeline-line {
-    height: 1px;
-    width: 3000px;
+    height: 2000px;
+    width: 1px;
     background-color: black;
+    margin: 40px 0;
+    position: relative;
     display: flex;
-    justify-content: space-evenly;
-    margin-left: 1600px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.timeline-drag {
-    width: 1400px;
-    height: 40px;
-    /* border: solid pink 1px; */
-    margin-top: -320px;
-    z-index: 2;
-    cursor: pointer;
-}
-
-.timeline-card-container {
-    /* display: flex;
+.card-item {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    height: 200px; */
+    margin-top: 90px;
     position: relative;
 }
 
-.timeline-dot {
-    height: 6px;
-    width: 6px;
-    background-color: black;
+.card-dot {
+    height: 11px;
+    width: 11px;
     border-radius: 50%;
-    margin-top: -2px;
+    background-color: black;
+    cursor: pointer;
+    transition: all .1s; 
+    z-index: 3;
 }
 
-.timeline-card {
+.card-line {
+    width: 70px;
+    height: 1px;
+    background-color: black;
     position: absolute;
-    background-color: gray;
-    height: 200px;
-    width: 400px;
-} 
-
-.down {
-    top: 50px;
-    left: -200px;
 }
 
-.up {
-    top: -250px;
-    left: -200px;
+.card-content {
+    width: 470px;
+    height: 300px;
+    border: solid black 1px;
+    position: absolute;
+    box-shadow: 0px 2px 1px rgba(0,0,0,0.5);
+}
+
+.card-cover {
+    height: 315px;
+    width: 545px;
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    transition: left 0.2s ease;
+    /* border: solid red 1px; */
 }
