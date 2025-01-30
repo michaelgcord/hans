@@ -44,6 +44,7 @@ const Events = () => {
                         </div>
                     )
                 })}
+            <div className="events-spacing"></div>
             </div>
         </div>
     )
