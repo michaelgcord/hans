@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const Card = ({direction}) => {
+const Card = ({direction, content}) => {
     const [show, setShow] = useState(false)
     const toggle = () => {
         setShow(!show)
@@ -18,7 +18,9 @@ const Card = ({direction}) => {
             left: direction === 'left'
                 ? "-223%"
                 : "87%"
-        }}/>
+        }}>
+            {content}
+        </div>
         <div className="card-cover" style={{
             left: direction === 'left'
                 ? show
