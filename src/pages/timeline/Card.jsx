@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const Card = ({direction, content}) => {
+const Card = ({direction, embed, title, date}) => {
     const [show, setShow] = useState(false)
     const toggle = () => {
         setShow(!show)
@@ -19,7 +19,9 @@ const Card = ({direction, content}) => {
                 ? "-223%"
                 : "87%"
         }}>
-            {content}
+            <div>{embed}</div>
+            <strong className="card-title">{title}</strong>
+            <div className="card-date">{date}</div>
         </div>
         <div className="card-cover" style={{
             left: direction === 'left'
