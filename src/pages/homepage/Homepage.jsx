@@ -45,7 +45,7 @@ const Homepage = () => {
                     <Link to="/events">EVENTS</Link>
                 </div>
                 <div className="homepage-sub-header-item unselectable">
-                    <Link to="/misc-blog">MISC/BLOG</Link>
+                    <Link to="/syncs">SYNCS</Link>
                 </div>
             </div>
         </div>   

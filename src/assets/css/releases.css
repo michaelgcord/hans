@@ -3,5 +3,26 @@
     width: 100vw;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    position: relative;
+    /* justify-content: center; */
+}
+
+.releases-main-title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.releases-content {
+    height: 800px;
+    width: 800px;
+    display: flex;
+    align-items: center;
     justify-content: center;
+}
+
+.releases-item {
+    height: 600px;
+    width: 500px;
+    padding: 10px;
 }

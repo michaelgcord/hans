@@ -6,8 +6,10 @@ import Timeline from './pages/Timeline.jsx'
 import Releases from './pages/Releases.jsx'
 import About from './pages/About.jsx'
 import Events from './pages/Events.jsx'
+import Syncs from './pages/Syncs.jsx'
 import MiscBlog from './pages/MiscBlog.jsx'
 import './assets/css/index.css'
+import { Theme } from "@radix-ui/themes";
 
 const router = createHashRouter([
 	{
@@ -31,13 +33,15 @@ const router = createHashRouter([
 		element: <Events />
 	},
 	{
-		path: '/misc-blog',
-		element: <MiscBlog />
-	},		
+		path: '/syncs',
+		element: <Syncs />
+	},
 ])
 
 createRoot(document.getElementById('root')).render(
 	<StrictMode>
-		<RouterProvider router={router}/>
+		<Theme>
+			<RouterProvider router={router}/>
+		</Theme>
 	</StrictMode>,
 )

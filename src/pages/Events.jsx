@@ -1,3 +1,5 @@
+import NavMenu from "./components/NavMenu";
+
 const Events = () => {
     const content = [
         {
@@ -28,7 +30,8 @@ const Events = () => {
 
     return (
         <div className="events-container">
-            <div className="events-main-title">Events </div>
+            <NavMenu></NavMenu>
+            <div className="events-main-title">Experiences</div>
             <div className="events-content-container">
                 {content.map((element) => {
                     return (
